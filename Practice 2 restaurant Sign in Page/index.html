@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <div class="title"><span>Sign In Form</span></div>
+        <form action="#">
+            <div class="row">
+                <input type="text" placeholder="Name" required>
+                <input type="text" placeholder="Sir Name" required>
+            </div>
+            <div class="row">
+                <input type="text" placeholder="Email@hotmail.com" required>
+                <select name="Gender" id="gender_selection">
+                <option value="">--Please choose an option--</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="non-binary">Non-binary</option>
+                <option value="other">Other</option>
+                <option value="prefer-not-to-say">Prefer not to say</option>
+                </select>
+            </div>
+            <div class="row">
+                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Password Repeat" required>
+            </div>
+            <div class="row">
+                <label for="gender-male">
+                <input type="radio" id="WorkedBefore" name="PrexperienceCheck" value="Worked"> Employed Before<br>
+                <input type="radio" id="WorkedBefore" name="PrexperienceCheck" value="WorkedNOT"> Not Employed Before
+                </label>
+                <input id="submit" type="submit" value="SIGN IN">
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+</body>
+</html>

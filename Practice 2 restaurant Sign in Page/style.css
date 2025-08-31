@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    background-image: url(RestourantBG.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.wrapper{
+    width: 360px;
+    height: 360px;
+    background-color: rgba(240, 248, 255, 0.73);
+    padding: 15px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 20%;
+
+}
+
+.wrapper input:hover{
+background-color: aliceblue;
+transition: 1s;
+}
+
+.wrapper #submit{
+    height: 50px;
+    font-size: 25px;
+    font-weight: bolder;
+    border: none;
+    letter-spacing: 5px;
+    margin-top: 5px;
+}
+.wrapper #submit:hover{
+    background-color: rgba(0, 128, 0, 0.336);
+}
+
+
+.title{
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 10px;
+    letter-spacing: 5px;
+}
+
+.row{
+    display: grid;
+    height: 60px;
+}
