@@ -60,4 +60,16 @@ transition: 1s;
 .row{
     display: grid;
     height: 60px;
+    border: none;
+}
+
+
+.row input:hover{
+    transform: scale(1.03);
+    transition: 0.5s;
+
+}
+
+.row input:checked{
+    transform: scale(1.3);
 }
