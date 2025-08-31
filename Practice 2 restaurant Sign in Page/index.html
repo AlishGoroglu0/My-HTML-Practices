@@ -10,14 +10,14 @@
     
     <div class="wrapper">
 
-        <div class="title"><span>Sign In Form</span></div>
+        <div class="title"><span>Sign Up Form</span></div>
         <form action="#">
             <div class="row">
-                <input type="text" placeholder="Name" required>
-                <input type="text" placeholder="Sir Name" required>
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
             </div>
             <div class="row">
-                <input type="text" placeholder="Email@hotmail.com" required>
+                <input type="text" required>
                 <select name="Gender" id="gender_selection">
                 <option value="">--Please choose an option--</option>
                 <option value="male">Male</option>
@@ -28,15 +28,17 @@
                 </select>
             </div>
             <div class="row">
-                <input type="password" placeholder="Password" required>
-                <input type="password" placeholder="Password Repeat" required>
+                <input id="Password-enter" type="password" placeholder="Password" required>
+                <input id="Confirm-Password" type="password" placeholder="Password" required>
             </div>
             <div class="row">
-                <label for="gender-male">
-                <input type="radio" id="WorkedBefore" name="PrexperienceCheck" value="Worked"> Employed Before<br>
-                <input type="radio" id="WorkedBefore" name="PrexperienceCheck" value="WorkedNOT"> Not Employed Before
+                <label for="Worked-here">
+                <input type="radio" id="Worked-here" name="PrexperienceCheck" value="Worked-here"> Employed Before
                 </label>
-                <input id="submit" type="submit" value="SIGN IN">
+                <label for="Worked-here-not">
+                    <input type="radio" id="Worked-here-not" name="PrexperienceCheck" value="Worked-here-not"> Not Employed Before
+                </label>
+                <input id="submit" type="submit" value="SIGN UP">
             </div>
         </form>
     </div>
