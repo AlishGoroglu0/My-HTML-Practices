@@ -1,2 +1,2 @@
-# My-HTML-Practices
-I'm just doing HTML website Practices here. Nothing serious or anything useful.
+# My-HTML-CSS-Js-Practices
+I'm building my portfolio here
