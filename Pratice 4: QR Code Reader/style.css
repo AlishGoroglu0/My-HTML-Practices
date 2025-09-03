@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+ background: rgb(6, 6, 54);
+}
+
+.container{
+    width: 400px;
+    
+    padding: 25px , 35px;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    background: darkblue;
+    box-shadow: 0 0 15px #000763;
+    border-radius: 10px;
+    border: 5px solid darkblue;
+    
+}
+
+.container h1{
+    font-weight:bolder;
+    margin-bottom: 5px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+.container p{
+
+    margin-bottom: 15px;
+    text-align: center;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+    
+
+}
+.container button{
+   width: 100%;
+   height: 60px;
+   font-size: 25pt;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-weight: bolder;
+   color: white;
+   border: none;
+   border-radius: 10px;
+   background: linear-gradient(rgb(0, 0, 78), rgb(0, 7, 36));
+   cursor: pointer;
+}
+
+.container button:hover{
+
+background: linear-gradient(rgb(0, 0, 78), rgb(46, 18, 90));
+box-shadow: 0 0 15px #080055;
+transition: 0.5s;
+
+}
+.container button:active{
+
+
+    background: rgb(9, 25, 95);
+    transition: 0.2s;
+    box-shadow: 0 0 30px #2619da;
+}
+
+.container input{
+
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    border: 1px solid darkblue;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 10px 0 20px;
+}
+
+.QrCodeContainer{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+     background: linear-gradient(90deg, #0a0099 , #4f018f);
+    box-shadow: 0 0 15px #03273a;
+}
+
+.QrCodeContainer .QrCodeArea{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    box-shadow: 0 0 15px #6306a1;
+    background: darkblue;
+    border-radius: 40px;
+    border: purple 2px solid;
+    border-radius: 20px;
+
+}
+
+#QrCodeImage{
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes warnuser{
+
+     10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+    background-color: rgb(255, 162, 162);
+  }
+  20%, 80% {
+    transform: translate3d(+2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(+4px, 0, 0);
+  }
+}
+
+
+.warnuser{
+        animation: warnuser;
+        animation-duration: 2s;
+    }
