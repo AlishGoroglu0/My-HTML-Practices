@@ -1,82 +1,95 @@
+/* Imports the 'Share Tech Mono' font from Google Fonts. */
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
+/* Styles the body of the page. */
 body {
-    font-family: 'Share Tech Mono', monospace;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    overflow: hidden;
+    font-family: 'Share Tech Mono', monospace; /* Sets the font family. */
+    display: flex; /* Uses flexbox for layout. */
+    align-items: center; /* Vertically centers the content. */
+    justify-content: center; /* Horizontally centers the content. */
+    height: 100vh; /* Sets the height to the full viewport height. */
+    margin: 0; /* Removes default margin. */
+    overflow: hidden; /* Hides any overflowing content. */
 }
 
+/* Styles the main container for the panels. */
 .container{
-
-    display: flex;
-    width: 90vw;
+    display: flex; /* Uses flexbox for panel layout. */
+    width: 90vw; /* Sets the width to 90% of the viewport width. */
 }
 
+/* Styles individual panels. */
 .panel{
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 80vh;
-    border-radius: 50px;
-    cursor: pointer;
-    flex: 0.5;
-    margin: 10px;
-    position: relative;
-    transition: flex 0.7s ease-in;
+    background-size: auto 100%; /* Scales the background image to 100% height. */
+    background-repeat: no-repeat; /* Prevents the background image from repeating. */
+    background-position: center; /* Centers the background image. */
+    height: 80vh; /* Sets the height to 80% of the viewport height. */
+    border-radius: 50px; /* Applies a large border-radius for rounded corners. */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering. */
+    flex: 0.5; /* Sets the initial flex-grow value. */
+    margin: 10px; /* Adds margin around each panel. */
+    position: relative; /* Sets the position to relative for absolute positioning of children. */
+    transition: flex 0.7s ease-in; /* Adds a transition effect to the 'flex' property. */
 }
 
+/* Styles the active panel. */
 .panel.active {
-    flex: 5;
+    flex: 5; /* Expands the flex-grow value to make the panel larger. */
 }
 
 
+/* Styles the h2 heading inside the panels. */
 .panel h2{
-    font-size: 24pt;
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 0;
-    opacity: 0;
+    font-size: 24pt; /* Sets the font size. */
+    position: absolute; /* Positions the heading absolutely. */
+    bottom: 20px; /* Positions the heading 20px from the bottom. */
+    left: 50%; /* Positions the heading 50% from the left. */
+    transform: translateX(-50%); /* Centers the heading horizontally using a transform. */
+    margin: 0; /* Removes default margin. */
+    opacity: 0; /* Hides the heading by default. */
 }
 
+/* Styles the paragraph text inside the panels. */
 .panel p{
-    margin: 0;
-    color: blue;
-    text-align: center;
-    left: 50%;
-    font-size: 12pt;
-    position: absolute;
-    transform: translateX(-50%);
-    opacity: 0;
+    margin: 0; /* Removes default margin. */
+    color: blue; /* Sets the text color to blue. */
+    text-align: center; /* Centers the text. */
+    left: 50%; /* Positions the paragraph 50% from the left. */
+    font-size: 12pt; /* Sets the font size. */
+    position: absolute; /* Positions the paragraph absolutely. */
+    transform: translateX(-50%); /* Centers the paragraph horizontally using a transform. */
+    opacity: 0; /* Hides the paragraph by default. */
 }
 
+/* Styles the h2 heading when its parent panel is active. */
 .panel.active h2{
-    text-decoration: underline;
-    color: orange;
-    opacity: 1;
-    transition: opacity 1s ease-in;
+    text-decoration: underline; /* Adds an underline. */
+    color: orange; /* Changes the text color to orange. */
+    opacity: 1; /* Makes the heading visible. */
+    transition: opacity 1s ease-in; /* Adds a transition effect to the 'opacity' property. */
 }
 
+/* Styles the paragraph text when its parent panel is active. */
 .panel.active p{
-    opacity: 1;
-    transition: opacity 3s ease-in;
+    opacity: 1; /* Makes the paragraph visible. */
+    transition: opacity 3s ease-in; /* Adds a transition effect to the 'opacity' property. */
 }
 
 
 
+/* Media query for screens with a maximum width of 600px. */
 @media (max-width: 600px)
 {
+    /* Styles the container for small screens. */
     .container{
-        width: 100vw;
+        width: 100vw; /* Sets the width to the full viewport width. */
     }
+    /* Hides the 4th and 5th panels on small screens. */
     .panel:nth-of-type(4) , .panel:nth-of-type(5){
         display: none;
     }
    
 
     }
+
+}
