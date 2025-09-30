@@ -1,0 +1,140 @@
+body{
+    height: 120vh;
+    background: linear-gradient(180deg, rgb(0, 0, 0), rgb(14, 3, 80));
+}
+
+.Enroll{
+    background-color: orange;
+    border: none;
+    border-radius: 10%;
+    border-bottom-right-radius: 100%;
+    border-top-right-radius: 100%;
+    height: 10vh;
+    width: 25vh;
+    font-weight: bolder;
+    font-size: 20pt;
+}
+
+
+.Enroll:hover{
+    background-color: darkgoldenrod;
+    transition: 1s;
+}
+
+
+.Enroll:active {
+    transform: translate(30px, 0px);
+    transition: 0.1ms;
+}
+
+
+.sparkle-gif {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    
+    width: 250px; 
+    height: 250px;
+    z-index: 10; 
+    opacity: 0;
+    pointer-events: none; 
+    transition: opacity 0.1s; 
+}
+
+
+.sparkle-gif.visible {
+    opacity: 1;
+    transition: opacity 0s; 
+}
+
+
+
+.showsection{
+background: linear-gradient(50deg, rgb(56, 45, 45), rgba(0, 0, 168, 0.507));
+}
+
+.NewsInput{
+width: 400px;
+
+}
+@media(min-width: 600px){
+    .NewsInput{
+        width: 50%;
+    }
+}
+
+.Infocard:hover{
+    transform: translate(0px, -10px);
+    transition: 1s;
+    box-shadow: white 0px 20px 10px;}
+.Infocard{
+    padding-top: 20px;
+    height: 50vh;
+}
+
+.Infocard img{
+    height:30vh
+}
+
+
+.backpage{
+    z-index: -1;
+}
+.Enrollform {
+    display: none;
+    z-index: 99999;
+    position: fixed;
+    width: 40vw;
+    height: 70vh;
+    background: white;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    padding: 20px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.Enrollform.is-active{
+    display: block;
+    animation-name: appear;
+    animation-duration: 1s
+}
+
+@media(max-width: 600px){
+.Enrollform {
+    display: none;
+    z-index: 99999;
+    position: fixed;
+    width: 100vw;
+    height: 70vh;
+    background: white;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    padding: 20px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+}
+
+.backpage.is-active { 
+    
+    opacity: 0.3;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;  
+    z-index: 99998;
+}
+
+@keyframes appear{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+
+}
